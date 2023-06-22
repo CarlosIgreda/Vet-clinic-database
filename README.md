@@ -9,6 +9,10 @@
 - [💻 Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Setup](#setup)
+  - [Install](#install)
+  - [Usage](#usage)
+  - [Run tests](#run-tests)
+  - [Deployment](#deployment)
 - [👥 Author](#author)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
@@ -42,11 +46,42 @@ I will use a relational database to create the data structure for a vet clinic. 
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-This repository includes files with plain SQL that can be used to recreate a database:
+To get a local copy up and running, follow these steps.
 
-- Use [schema.sql](./schema.sql) to create all tables.
-- Use [data.sql](./data.sql) to populate tables with sample data.
-- Check [queries.sql](./queries.sql) for examples of queries that can be run on a newly created database. **Important note: this file might include queries that make changes in the database (e.g., remove records). Use them responsibly!**
+### Prerequisites
+
+In order to run this project you need:
+
+✅ Github account <br>
+✅ Visual Studio Code installed <br>
+✅ Node.js installed <br>
+✅ Git Bash installed (optional) <br>
+✅ PostgreSQL installed  
+
+### Setup
+
+Clone this repository to your desired folder:
+
+```sh
+  cd Vet-clinic-database
+  git clone https://github.com/CarlosIgreda/Vet-clinic-database.git
+```
+
+### Install
+
+N/A.
+
+### Usage
+
+Run the SQL Shell (psql) or the pgAdmin 4.
+
+### Run tests
+
+N/A.
+
+### Deployment
+
+N/A.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
