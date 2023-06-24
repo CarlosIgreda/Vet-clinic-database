@@ -39,9 +39,9 @@ I will use a relational database to create the data structure for a vet clinic. 
 ### Key Features <a name="key-features"></a>
 
 - **Follow a correct Gitflow**
+- **Understood the different types of relationships between tables**
+- **Prepared complex queries that answer analytical questions**
 - **Use primary key & foreign key mechanism for joining tables**
-- **Query multiple tables**
-- **Prepare complex queries that answer analytical questions**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -97,7 +97,7 @@ N/A.
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Add "join table" for visits**
+- [ ] **Database performance audit**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
