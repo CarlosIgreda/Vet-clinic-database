@@ -39,8 +39,8 @@ I will use a relational database to create the data structure for a vet clinic. 
 ### Key Features <a name="key-features"></a>
 
 - **Follow a correct Gitflow**
-- **Use database transactions**
-- **Modify and delete data in SQL**
+- **Use primary key & foreign key mechanism for joining tables**
+- **Query multiple tables**
 - **Prepare complex queries that answer analytical questions**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -97,7 +97,7 @@ N/A.
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Query multiple tables**
+- [ ] **Add "join table" for visits**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -137,6 +137,6 @@ I would like to thank all Microverse staff and my coding partners as well.
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENSE) licensed.
+This project is [MIT](./LICENSE.md) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
