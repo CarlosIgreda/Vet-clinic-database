@@ -91,6 +91,11 @@ N/A.
 - Twitter: [@carlosigreda](https://twitter.com/carlosigreda)
 - LinkedIn: [@carlosigreda](https://www.linkedin.com/in/carlosigreda/)
 
+- **Larry Villegas**
+- GitHub: [@CarlosIgreda](https://github.com/LarryIVC)
+- Twitter: [@carlosigreda](https://twitter.com/LarryVillegas)
+- LinkedIn: [@carlosigreda](https://www.linkedin.com/in/larryvillegascostas/)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🔭 Future Features <a name="future-features"></a>
