@@ -56,8 +56,23 @@ CREATE TABLE specializations (
 );
 
 CREATE TABLE visits (
-    animal_id INT REFERENCES animals(id),
-    vet_id INT REFERENCES vets(id),
-    visit_date DATE,
-    PRIMARY KEY (animal_id, vet_id, visit_date)
+    id INT PRIMARY KEY NOT NULL GENERATED ALWAYS AS IDENTITY,
+    animal_id INT,
+    vet_id INT,
+    date_of_visit DATE,
+    CONSTRAINT fk_vets
+      FOREIGN KEY (vet_id) REFERENCES vets(id),
+    CONSTRAINT fk_animals
+      FOREIGN KEY (animal_id) REFERENCES animals(id)
 );
+
+/*Preparation for Database Performance Audit*/
+
+-- Add an email column to your owners table
+ALTER TABLE owners ADD COLUMN email VARCHAR(120);
+
+--Improving queries:
+
+CREATE INDEX idx_visits_animal_id ON visits (animal_id);
+CREATE INDEX idx_visits_vet_id ON visits (vet_id);
+CREATE INDEX idx_owners_email ON owners (email);

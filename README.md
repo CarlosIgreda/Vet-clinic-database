@@ -13,7 +13,7 @@
   - [Usage](#usage)
   - [Run tests](#run-tests)
   - [Deployment](#deployment)
-- [👥 Author](#author)
+- [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
@@ -39,9 +39,7 @@ I will use a relational database to create the data structure for a vet clinic. 
 ### Key Features <a name="key-features"></a>
 
 - **Follow a correct Gitflow**
-- **Understand the different types of relationships between tables**
-- **Prepare complex queries that answer analytical questions**
-- **Use primary key & foreign key mechanism for joining tables**
+- **Understand what can impact database performance**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -86,18 +84,23 @@ N/A.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## 👥 Author <a name="author"></a>
+## 👥 Authors <a name="authors"></a>
 
 **Carlos Igreda**
 - GitHub: [@CarlosIgreda](https://github.com/CarlosIgreda)
 - Twitter: [@carlosigreda](https://twitter.com/carlosigreda)
 - LinkedIn: [@carlosigreda](https://www.linkedin.com/in/carlosigreda/)
 
+- **Larry Villegas**
+- GitHub: [@CarlosIgreda](https://github.com/LarryIVC)
+- Twitter: [@carlosigreda](https://twitter.com/LarryVillegas)
+- LinkedIn: [@carlosigreda](https://www.linkedin.com/in/larryvillegascostas/)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Database performance audit**
+- [ ] **Add database schema diagram**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
