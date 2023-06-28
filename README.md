@@ -91,7 +91,7 @@ N/A.
 - Twitter: [@carlosigreda](https://twitter.com/carlosigreda)
 - LinkedIn: [@carlosigreda](https://www.linkedin.com/in/carlosigreda/)
 
-- **Larry Villegas**
+**Larry Villegas**
 - GitHub: [@LarryIVC](https://github.com/LarryIVC)
 - Twitter: [@LarryIVC](https://twitter.com/LarryVillegas)
 - LinkedIn: [@LarryIVC](https://www.linkedin.com/in/larryvillegascostas/)
