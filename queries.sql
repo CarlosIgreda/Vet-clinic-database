@@ -114,7 +114,7 @@ FROM visits v
 JOIN vets ve ON v.vet_id = ve.id
 JOIN animals a ON v.animal_id = a.id
 WHERE ve.name = 'William Tatcher'
-ORDER BY v.visit_date DESC
+ORDER BY v.date_of_visit DESC
 LIMIT 1;
 
 SELECT COUNT(DISTINCT v.animal_id) AS animal_count
@@ -132,7 +132,7 @@ FROM visits v
 JOIN vets ve ON v.vet_id = ve.id
 JOIN animals a ON v.animal_id = a.id
 WHERE ve.name = 'Stephanie Mendez'
-AND v.visit_date BETWEEN '2020-04-01' AND '2020-08-30';
+AND v.date_of_visit BETWEEN '2020-04-01' AND '2020-08-30';
 
 SELECT a.name AS animal_name, COUNT(*) AS visit_count
 FROM visits v
@@ -142,7 +142,7 @@ ORDER BY visit_count DESC
 LIMIT 1;
 
 SELECT animals.name AS animal, vets.name AS vet_name,
-MIN(visit_date) AS first_visit 
+MIN(date_of_visit) AS first_visit 
 FROM animals JOIN visits ON animals.id = visits.animal_id 
 JOIN vets ON vets.id = visits.vet_id 
 WHERE vets.name IN ('Maisy Smith')
@@ -150,15 +150,15 @@ GROUP BY animal, vet_name
 ORDER BY first_visit
 LIMIT 1;
 
-SELECT a.name AS animal_name, v.name AS vet_name, vi.visit_date
+SELECT a.name AS animal_name, v.name AS vet_name, vi.date_of_visit
 FROM visits vi
 JOIN vets v ON vi.vet_id = v.id
 JOIN animals a ON vi.animal_id = a.id
-ORDER BY vi.visit_date DESC
+ORDER BY vi.date_of_visit DESC
 LIMIT 8;
 
 SELECT vet AS non_specialist, COUNT(number_of_visit) as visit_count
-FROM (SELECT vets.name AS vet, visits.visit_date AS number_of_visit,
+FROM (SELECT vets.name AS vet, visits.date_of_visit AS number_of_visit,
 specializations.species_id AS spec_id 
 FROM vets
 LEFT JOIN visits ON vets.id = visits.vet_id 
@@ -175,3 +175,9 @@ WHERE vets.name IN ('Maisy Smith')
 GROUP BY species.name, vets.name
 ORDER BY max_quantity DESC
 LIMIT 1;
+
+--Database Performance Audit
+
+explain analyze SELECT COUNT(*) FROM visits where animal_id = 4
+explain analyze SELECT animal_id, vet_id FROM visits where vet_id = 2;
+explain analyze SELECT * FROM owners where email = 'owner_18327@mail.com';
